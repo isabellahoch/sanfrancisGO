@@ -22,6 +22,13 @@
                                 <rect key="frame" x="115" y="168" width="186" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sᴀɴғʀᴀɴcɪsⒼⓄ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vky-cc-biM">
+                                <rect key="frame" x="75" y="104" width="265" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ᴄʜᴏᴏsᴇ ʏᴏᴜʀ ᴀᴅᴠᴇɴᴛᴜʀᴇ!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDu-0q-rzU">
                                 <rect key="frame" x="75" y="287" width="265" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -59,13 +66,15 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sᴀɴғʀᴀɴcɪsⒼⓄ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vky-cc-biM">
-                                <rect key="frame" x="75" y="104" width="265" height="56"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUN-t9-dDg">
+                                <rect key="frame" x="179" y="706" width="58" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="MAP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -91,24 +100,29 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9az-BN-NSY">
                                         <rect key="frame" x="0.0" y="16" width="414" height="808"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <mutableString key="text">ᴛʜᴇ ʙᴀsɪᴄ sᴀɴ ғʀᴀɴᴄɪsᴄᴏ ᴛᴏᴜʀ
-Description: This tour features all of the iconic SF spots to make for the perfect day in SF.
+                                        <color key="backgroundColor" red="1" green="0.84290986641650811" blue="0.81529616166657382" alpha="0.47891695205479451" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <mutableString key="text">Description: This tour features all of the iconic SF spots to make for the perfect day in SF.
 
 Starting point: The Ferry Building
 Located on the western edge of the continent, and at the center of the city’s financial, banking and transportation district, the ferry building showcases many small regional producers that practice traditional farming or production techniques. The ferry building also has a breathtaking view of the Bay Bridge.
+
 Coit Tower
 Walk or drive over to Coit Tower, an iconic SF landmark with amazing views of the city. As you wait in line, you can admire the beautiful artwork inside the tower. If you decide to drive from the Ferry building, there is a parking lot at the base of the tower. If you decide to walk from the Ferry Building, consider taking the Greenwich Steps, with access at 233 Greenwich Street.
 Address: 1 Telegraph Hill Blvd, San Francisco, CA 94133
+
 Pier 39
 Walk or drive over to Pier 39 for food and fun activities. Some activities include Magowan’s Infinite Mirror Maze, the Musical Stairs, the Carousel, and the Sea Lion Center.
 Before hitting Pier 39, a popular SF destination is to tour Alcatraz. Tours to Alcatraz can be found on Pier 33, organized by Alcatraz Cruises.
+
 Fisherman’s Wharf
 Walk over to Fisherman’s Wharf for more restaurant options and fun museums, such as Ripley’s Believe It or Not, Museum of Illusions, and the USS Pampanito.
+
 Ghirardelli Square
 Get a free sample of chocolate from the Original Ghirardelli Ice Cream &amp; Chocolate store and grab an ice cream sundae from this iconic chocolate destination.
+
 Lombard Street
 On the way out of SF, be sure to drive down or walk by Lombard Street, one of San Francisco’s most photographed attractions. 
+
 Extras:
 The Painted Ladies
 If you have a little extra time in the trip, you may be interested in visiting the Painted Ladies. Featured in the Full House title sequence, the painted ladies houses are a great photo op destination
