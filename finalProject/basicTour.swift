@@ -15,7 +15,6 @@ class basicTour: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         scrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: textView.bottomAnchor).isActive = true
 
         // Do any additional setup after loading the view.
