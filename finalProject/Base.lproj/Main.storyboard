@@ -101,7 +101,8 @@
                                         <rect key="frame" x="0.0" y="16" width="414" height="808"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.84290986641650811" blue="0.81529616166657382" alpha="0.47891695205479451" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <mutableString key="text">Description: This tour features all of the iconic SF spots to make for the perfect day in SF.
+                                        <mutableString key="text">ᴛʜᴇ ʙᴀsɪᴄ sᴀɴ ғʀᴀɴᴄɪsᴄᴏ ᴛᴏᴜʀ
+Description: This tour features all of the iconic SF spots to make for the perfect day in SF.
 
 Starting point: The Ferry Building
 Located on the western edge of the continent, and at the center of the city’s financial, banking and transportation district, the ferry building showcases many small regional producers that practice traditional farming or production techniques. The ferry building also has a breathtaking view of the Bay Bridge.
@@ -128,7 +129,7 @@ The Painted Ladies
 If you have a little extra time in the trip, you may be interested in visiting the Painted Ladies. Featured in the Full House title sequence, the painted ladies houses are a great photo op destination
 Address: Steiner St &amp;, Hayes St, San Francisco, CA 94117
 </mutableString>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
