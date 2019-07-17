@@ -15,6 +15,8 @@
 		18E8800D22DF87B700E2DCB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8800B22DF87B700E2DCB9 /* LaunchScreen.storyboard */; };
 		18E8801522DF954500E2DCB9 /* basicTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8801422DF954500E2DCB9 /* basicTour.swift */; };
 		18EC916422DFB8C90089E0C3 /* embeddedMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC916322DFB8C90089E0C3 /* embeddedMapViewController.swift */; };
+		18EC916A22DFD11B0089E0C3 /* Tour1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC916922DFD11B0089E0C3 /* Tour1TableViewController.swift */; };
+		18EC916C22DFD16B0089E0C3 /* TourStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC916B22DFD16B0089E0C3 /* TourStop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		18E8800E22DF87B700E2DCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18E8801422DF954500E2DCB9 /* basicTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicTour.swift; sourceTree = "<group>"; };
 		18EC916322DFB8C90089E0C3 /* embeddedMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = embeddedMapViewController.swift; sourceTree = "<group>"; };
+		18EC916922DFD11B0089E0C3 /* Tour1TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour1TableViewController.swift; sourceTree = "<group>"; };
+		18EC916B22DFD16B0089E0C3 /* TourStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourStop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				18E8800B22DF87B700E2DCB9 /* LaunchScreen.storyboard */,
 				18E8800E22DF87B700E2DCB9 /* Info.plist */,
 				18E8800622DF87B600E2DCB9 /* finalProject.xcdatamodeld */,
+				18EC916922DFD11B0089E0C3 /* Tour1TableViewController.swift */,
+				18EC916B22DFD16B0089E0C3 /* TourStop.swift */,
 			);
 			path = finalProject;
 			sourceTree = "<group>";
@@ -146,6 +152,8 @@
 			files = (
 				18E8800222DF87B600E2DCB9 /* ViewController.swift in Sources */,
 				18EC916422DFB8C90089E0C3 /* embeddedMapViewController.swift in Sources */,
+				18EC916C22DFD16B0089E0C3 /* TourStop.swift in Sources */,
+				18EC916A22DFD11B0089E0C3 /* Tour1TableViewController.swift in Sources */,
 				18E8800822DF87B600E2DCB9 /* finalProject.xcdatamodeld in Sources */,
 				18E8801522DF954500E2DCB9 /* basicTour.swift in Sources */,
 				18E8800022DF87B600E2DCB9 /* AppDelegate.swift in Sources */,
