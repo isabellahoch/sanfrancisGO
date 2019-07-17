@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="finalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="golden-state" translatesAutoresizingMaskIntoConstraints="NO" id="3XS-Dv-pdO">
@@ -56,9 +56,6 @@
                                 <state key="normal" title="The &quot;Not So Touristy&quot; Tour">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="ZjU-WQ-jWt" kind="show" id="a0P-ik-dzq"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJe-S7-osU">
                                 <rect key="frame" x="115" y="562" width="185" height="36"/>
@@ -68,9 +65,6 @@
                                 <state key="normal" title="The Adventure Tour">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="9KO-qx-dMb" kind="show" id="lwi-qO-EnI"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUN-t9-dDg">
                                 <rect key="frame" x="179" y="706" width="58" height="36"/>
@@ -80,6 +74,9 @@
                                 <state key="normal" title="MAP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sfn-Bt-4c9" kind="show" id="R1z-G8-E7c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,27 +88,38 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="JgA-J7-2vZ">
+        <!--Embedded Map View Controller-->
+        <scene sceneID="L8P-FC-M9K">
             <objects>
-                <viewController id="ZjU-WQ-jWt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SOb-Jy-61V">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="sfn-Bt-4c9" customClass="embeddedMapViewController" customModule="finalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Ri-dT-WKe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIq-hu-r7t">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="SAq-1F-1zq"/>
+                        <viewLayoutGuide key="safeArea" id="9pW-zl-ZZA"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AnX-WJ-bET" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efN-2n-wEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1955" y="-631"/>
+            <point key="canvasLocation" x="1047.2" y="808.37438423645324"/>
         </scene>
         <!--Basic Tour-->
         <scene sceneID="8tm-sQ-4Vw">
             <objects>
                 <viewController id="qwR-2G-d8i" customClass="basicTour" customModule="finalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mWF-Td-Eog">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KaS-W0-Rae">
@@ -121,8 +129,8 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9az-BN-NSY">
                                         <rect key="frame" x="0.0" y="16" width="414" height="808"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">ᴛʜᴇ ʙᴀsɪᴄ sᴀɴ ғʀᴀɴᴄɪsᴄᴏ ᴛᴏᴜʀ
-Description: This tour features all of the iconic SF spots to make for the perfect day in SF.
+                                        <color key="backgroundColor" red="1" green="0.84290986641650811" blue="0.81529616166657382" alpha="0.47891695205479451" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <string key="text">Description: This tour features all of the iconic SF spots to make for the perfect day in SF.
 
 Starting point: The Ferry Building
 Located on the western edge of the continent, and at the center of the city’s financial, banking and transportation district, the ferry building showcases many small regional producers that practice traditional farming or production techniques. The ferry building also has a breathtaking view of the Bay Bridge.
@@ -133,7 +141,6 @@ Address: 1 Telegraph Hill Blvd, San Francisco, CA 94133
 
 Pier 39
 Walk or drive over to Pier 39 for food and fun activities. Some activities include Magowan’s Infinite Mirror Maze, the Musical Stairs, the Carousel, and the Sea Lion Center.
-
 Before hitting Pier 39, a popular SF destination is to tour Alcatraz. Tours to Alcatraz can be found on Pier 33, organized by Alcatraz Cruises.
 
 Fisherman’s Wharf
@@ -143,14 +150,14 @@ Ghirardelli Square
 Get a free sample of chocolate from the Original Ghirardelli Ice Cream &amp; Chocolate store and grab an ice cream sundae from this iconic chocolate destination.
 
 Lombard Street
-On the way out of SF, be sure to drive down or walk by Lombard Street, one of San Francisco’s most photographed attractions. 
+On the way out of SF, be sure to drive down or walk by Lombard Street, one of San Francisco’s most photographed attractions.
 
 Extras:
 The Painted Ladies
 If you have a little extra time in the trip, you may be interested in visiting the Painted Ladies. Featured in the Full House title sequence, the painted ladies houses are a great photo op destination
 Address: Steiner St &amp;, Hayes St, San Francisco, CA 94117
-</mutableString>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -190,7 +197,7 @@ Address: Steiner St &amp;, Hayes St, San Francisco, CA 94117
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VOV-fB-2gn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g5r-8n-4iW">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
