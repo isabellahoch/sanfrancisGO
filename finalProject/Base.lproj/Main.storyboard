@@ -56,6 +56,9 @@
                                 <state key="normal" title="The &quot;Not So Touristy&quot; Tour">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ZjU-WQ-jWt" kind="show" id="a0P-ik-dzq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJe-S7-osU">
                                 <rect key="frame" x="115" y="562" width="185" height="36"/>
@@ -65,6 +68,9 @@
                                 <state key="normal" title="The Adventure Tour">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="9KO-qx-dMb" kind="show" id="lwi-qO-EnI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUN-t9-dDg">
                                 <rect key="frame" x="179" y="706" width="58" height="36"/>
@@ -85,6 +91,21 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="JgA-J7-2vZ">
+            <objects>
+                <viewController id="ZjU-WQ-jWt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SOb-Jy-61V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="SAq-1F-1zq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AnX-WJ-bET" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1955" y="-631"/>
+        </scene>
         <!--Basic Tour-->
         <scene sceneID="8tm-sQ-4Vw">
             <objects>
@@ -100,7 +121,6 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9az-BN-NSY">
                                         <rect key="frame" x="0.0" y="16" width="414" height="808"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.84290986641650811" blue="0.81529616166657382" alpha="0.47891695205479451" colorSpace="custom" customColorSpace="sRGB"/>
                                         <mutableString key="text">ᴛʜᴇ ʙᴀsɪᴄ sᴀɴ ғʀᴀɴᴄɪsᴄᴏ ᴛᴏᴜʀ
 Description: This tour features all of the iconic SF spots to make for the perfect day in SF.
 
@@ -113,6 +133,7 @@ Address: 1 Telegraph Hill Blvd, San Francisco, CA 94133
 
 Pier 39
 Walk or drive over to Pier 39 for food and fun activities. Some activities include Magowan’s Infinite Mirror Maze, the Musical Stairs, the Carousel, and the Sea Lion Center.
+
 Before hitting Pier 39, a popular SF destination is to tour Alcatraz. Tours to Alcatraz can be found on Pier 33, organized by Alcatraz Cruises.
 
 Fisherman’s Wharf
@@ -147,6 +168,21 @@ Address: Steiner St &amp;, Hayes St, San Francisco, CA 94117
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Uo-ks-Jja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1955.072463768116" y="114.50892857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7Yg-Rt-K2G">
+            <objects>
+                <viewController id="9KO-qx-dMb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eWx-lA-MBe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3dw-5g-aNK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nif-ir-fkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1955" y="847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1KP-wN-z2v">
