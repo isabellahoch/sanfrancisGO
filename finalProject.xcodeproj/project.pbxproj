@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184E5C6922DFDED800BAB241 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E5C6822DFDED800BAB241 /* DetailViewController.swift */; };
+		185B0BAA22E0E85F00766418 /* Tour2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B0BA922E0E85F00766418 /* Tour2TableViewController.swift */; };
+		185B0BAC22E0EB8900766418 /* Tour3TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B0BAB22E0EB8900766418 /* Tour3TableViewController.swift */; };
+		185B0BB022E0EB9D00766418 /* PopCultureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B0BAF22E0EB9D00766418 /* PopCultureTableViewController.swift */; };
+		185B0BB222E0EBB600766418 /* Tour2DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B0BB122E0EBB600766418 /* Tour2DetailViewController.swift */; };
+		185B0BB422E0EBBE00766418 /* Tour3DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B0BB322E0EBBE00766418 /* Tour3DetailViewController.swift */; };
+		185B0BBE22E12C8A00766418 /* PopCultureDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B0BBD22E12C8A00766418 /* PopCultureDetailViewController.swift */; };
 		18E8800022DF87B600E2DCB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E87FFF22DF87B600E2DCB9 /* AppDelegate.swift */; };
 		18E8800222DF87B600E2DCB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8800122DF87B600E2DCB9 /* ViewController.swift */; };
 		18E8800522DF87B600E2DCB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8800322DF87B600E2DCB9 /* Main.storyboard */; };
@@ -20,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184E5C6822DFDED800BAB241 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		185B0BA922E0E85F00766418 /* Tour2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour2TableViewController.swift; sourceTree = "<group>"; };
+		185B0BAB22E0EB8900766418 /* Tour3TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour3TableViewController.swift; sourceTree = "<group>"; };
+		185B0BAF22E0EB9D00766418 /* PopCultureTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopCultureTableViewController.swift; sourceTree = "<group>"; };
+		185B0BB122E0EBB600766418 /* Tour2DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour2DetailViewController.swift; sourceTree = "<group>"; };
+		185B0BB322E0EBBE00766418 /* Tour3DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour3DetailViewController.swift; sourceTree = "<group>"; };
+		185B0BBD22E12C8A00766418 /* PopCultureDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopCultureDetailViewController.swift; sourceTree = "<group>"; };
 		18E87FFC22DF87B600E2DCB9 /* finalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E87FFF22DF87B600E2DCB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E8800122DF87B600E2DCB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +88,14 @@
 				18E8800E22DF87B700E2DCB9 /* Info.plist */,
 				18E8800622DF87B600E2DCB9 /* finalProject.xcdatamodeld */,
 				18EC916922DFD11B0089E0C3 /* Tour1TableViewController.swift */,
+				185B0BA922E0E85F00766418 /* Tour2TableViewController.swift */,
 				18EC916B22DFD16B0089E0C3 /* TourStop.swift */,
+				184E5C6822DFDED800BAB241 /* DetailViewController.swift */,
+				185B0BAB22E0EB8900766418 /* Tour3TableViewController.swift */,
+				185B0BAF22E0EB9D00766418 /* PopCultureTableViewController.swift */,
+				185B0BB122E0EBB600766418 /* Tour2DetailViewController.swift */,
+				185B0BB322E0EBBE00766418 /* Tour3DetailViewController.swift */,
+				185B0BBD22E12C8A00766418 /* PopCultureDetailViewController.swift */,
 			);
 			path = finalProject;
 			sourceTree = "<group>";
@@ -150,13 +171,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185B0BB222E0EBB600766418 /* Tour2DetailViewController.swift in Sources */,
 				18E8800222DF87B600E2DCB9 /* ViewController.swift in Sources */,
+				185B0BBE22E12C8A00766418 /* PopCultureDetailViewController.swift in Sources */,
 				18EC916422DFB8C90089E0C3 /* embeddedMapViewController.swift in Sources */,
+				185B0BB022E0EB9D00766418 /* PopCultureTableViewController.swift in Sources */,
 				18EC916C22DFD16B0089E0C3 /* TourStop.swift in Sources */,
 				18EC916A22DFD11B0089E0C3 /* Tour1TableViewController.swift in Sources */,
 				18E8800822DF87B600E2DCB9 /* finalProject.xcdatamodeld in Sources */,
+				185B0BAC22E0EB8900766418 /* Tour3TableViewController.swift in Sources */,
+				185B0BAA22E0E85F00766418 /* Tour2TableViewController.swift in Sources */,
 				18E8801522DF954500E2DCB9 /* basicTour.swift in Sources */,
 				18E8800022DF87B600E2DCB9 /* AppDelegate.swift in Sources */,
+				184E5C6922DFDED800BAB241 /* DetailViewController.swift in Sources */,
+				185B0BB422E0EBBE00766418 /* Tour3DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

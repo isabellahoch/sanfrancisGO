@@ -12,4 +12,6 @@ class TourStop {
     var name = ""
     var details = ""
     var address = ""
+    var link : URL!
+    var image = UIImage()
 }

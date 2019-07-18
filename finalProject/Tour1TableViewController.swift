@@ -15,7 +15,7 @@ class Tour1TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tourStops = createTourStops()
+        createTourStops()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -26,19 +26,28 @@ class Tour1TableViewController: UITableViewController {
 
     // MARK: - Table view data source
     
-    func createTourStops() -> [TourStop] {
-        
-        let ferryBuilding = TourStop()
-        ferryBuilding.name = "The Ferry Building"
-        ferryBuilding.details = "Located on the western edge of the continent, and at the center of the city’s financial, banking and transportation district, the ferry building showcases many small regional producers that practice traditional farming or production techniques. The ferry building also has a breathtaking view of the Bay Bridge."
-        ferryBuilding.address = "1 The Embarcadero, San Francisco, CA 94105"
-        let coitTower = TourStop()
-        coitTower.name = "Coit Tower"
-        coitTower.details = "Walk or drive over to Coit Tower, an iconic SF landmark with amazing views of the city. As you wait in line, you can admire the beautiful artwork inside the tower. If you decide to drive from the Ferry building, there is a parking lot at the base of the tower. If you decide to walk from the Ferry Building, consider taking the Greenwich Steps, with access at 233 Greenwich Street."
-        coitTower.address = "1 Telegraph Hill Blvd, San Francisco, CA 94133"
-        
-        return [ferryBuilding, coitTower]
+    func createTourStops() {
+        createTourStop(name: "The Ferry Building", details: "Located on the western edge of the continent, and at the center of the city’s financial, banking and transportation district, the ferry building showcases many small regional producers that practice traditional farming or production techniques. The ferry building also has a breathtaking view of the Bay Bridge.", image: UIImage(named:"ferry building")!, address: "1 The Embarcadero, San Francisco, CA 94105")
+        createTourStop(name: "Coit Tower", details: "Walk or drive over to Coit Tower, an iconic SF landmark with amazing views of the city. As you wait in line, you can admire the beautiful artwork inside the tower. If you decide to drive from the Ferry building, there is a parking lot at the base of the tower. If you decide to walk from the Ferry Building, consider taking the Greenwich Steps, with access at 233 Greenwich Street.", image: UIImage(named:"coit tower")!, address: "1 Telegraph Hill Blvd, San Francisco, CA 94133")
+        createTourStop(name: "Pier 39", details: "Walk or drive over to Pier 39 for food and fun activities. Some activities include Magowan’s Infinite Mirror Maze, the Musical Stairs, the Carousel, and the Sea Lion Center. Before hitting Pier 39, a popular SF destination is to tour Alcatraz. Tours to Alcatraz can be found on Pier 33, organized by Alcatraz Cruises.", image: UIImage(named:"pier 39")!, address: "The Embarcadero, San Francisco, CA 94133")
+        createTourStop(name: "Fisherman's Wharf", details: "@alk over to Fisherman’s Wharf for more restaurant options and fun museums, such as Ripley’s Believe It or Not, Museum of Illusions, and the USS Pampanito.", image: UIImage(named:"cute sf clipart")!, address: "Fisherman's Wharf, San Francisco, CA")
+        createTourStop(name: "Ghirardelli Square", details: "Get a free sample of chocolate from the Original Ghirardelli Ice Cream & Chocolate store and grab an ice cream sundae from this iconic chocolate destination.", image: UIImage(named:"g square")!, address: "900 North Point St Suite 52, San Francisco, CA 94109")
+        createTourStop(name: "Lombard Street", details: "On the way out of SF, be sure to drive down or walk by Lombard Street, one of San Francisco’s most photographed attractions.", image: UIImage(named:"lombard st")!, address: "Lombard St., San Francisco, CA")
+        createTourStop(name: "The Painted Ladies", details: "If you have a little extra time in the trip, you may be interested in visiting the Painted Ladies. Featured in the Full House title sequence, the painted ladies houses are a great photo op destination.", image: UIImage(named:"p ladies")!, address: "Steiner St &, Hayes St, San Francisco, CA 94117")
     }
+    
+    func createTourStop(name : String, details : String, image : UIImage, address : String) {
+        let newTourStop = TourStop()
+        newTourStop.name = name
+        newTourStop.details = details
+        newTourStop.image = image
+        newTourStop.address = address
+        let originalUrl = "http://maps.apple.com/?q=\(address)"
+        var urlString = originalUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        newTourStop.link = URL(string: urlString!)
+        tourStops.append(newTourStop)
+    }
+
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
 //        // #warning Incomplete implementation, return the number of sections
@@ -50,12 +59,22 @@ class Tour1TableViewController: UITableViewController {
         return tourStops.count
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // this gives us a single ToDo
+        let tourStop = tourStops[indexPath.row]
+        
+        performSegue(withIdentifier: "moveToComplete", sender: tourStop)
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         
         let tourStop = tourStops[indexPath.row]
         
         cell.textLabel?.text = "STOP \(indexPath.row+1): \(tourStop.name)"
+        
+        cell.textLabel?.font = UIFont(name:"Avenir", size:18)
 
         // Configure the cell...
 
@@ -106,5 +125,14 @@ class Tour1TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let completeVC = segue.destination as? DetailViewController {
+            if let tourStop = sender as? TourStop {
+                completeVC.selectedTourStop = tourStop
+                completeVC.previousVC = self
+            }
+        }
+    }
 
 }
