@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1822374022E1323200152E70 /* aboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822373F22E1323200152E70 /* aboutUsViewController.swift */; };
 		184E5C6922DFDED800BAB241 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E5C6822DFDED800BAB241 /* DetailViewController.swift */; };
 		185B0BAA22E0E85F00766418 /* Tour2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B0BA922E0E85F00766418 /* Tour2TableViewController.swift */; };
 		185B0BAC22E0EB8900766418 /* Tour3TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B0BAB22E0EB8900766418 /* Tour3TableViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1822373F22E1323200152E70 /* aboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutUsViewController.swift; sourceTree = "<group>"; };
 		184E5C6822DFDED800BAB241 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		185B0BA922E0E85F00766418 /* Tour2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour2TableViewController.swift; sourceTree = "<group>"; };
 		185B0BAB22E0EB8900766418 /* Tour3TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour3TableViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				185B0BB122E0EBB600766418 /* Tour2DetailViewController.swift */,
 				185B0BB322E0EBBE00766418 /* Tour3DetailViewController.swift */,
 				185B0BBD22E12C8A00766418 /* PopCultureDetailViewController.swift */,
+				1822373F22E1323200152E70 /* aboutUsViewController.swift */,
 			);
 			path = finalProject;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				18EC916422DFB8C90089E0C3 /* embeddedMapViewController.swift in Sources */,
 				185B0BB022E0EB9D00766418 /* PopCultureTableViewController.swift in Sources */,
 				18EC916C22DFD16B0089E0C3 /* TourStop.swift in Sources */,
+				1822374022E1323200152E70 /* aboutUsViewController.swift in Sources */,
 				18EC916A22DFD11B0089E0C3 /* Tour1TableViewController.swift in Sources */,
 				18E8800822DF87B600E2DCB9 /* finalProject.xcdatamodeld in Sources */,
 				185B0BAC22E0EB8900766418 /* Tour3TableViewController.swift in Sources */,
