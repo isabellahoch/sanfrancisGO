@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseCore
+import FirebaseDatabase
+import CoreData
 
 class Tour1TableViewController: UITableViewController {
     
@@ -14,6 +18,32 @@ class Tour1TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let db = Firestore.firestore()
+        
+        db.collection("destinations").whereField("tour", isEqualTo: "1").getDocuments { (snapshot, error) in
+            if let snapshot = snapshot {
+                for document in snapshot.documents {
+                    let data = document.data()
+                    
+                    print(data)
+                    
+                    
+                    
+                    let tourStopDetails = jsonTourStop(json: data)
+                    
+                    
+                    if let dictionary = data as? [String: Any] {
+                        if let name = dictionary["name"] as? String {
+                            print(name)
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+        
         
         createTourStops()
 

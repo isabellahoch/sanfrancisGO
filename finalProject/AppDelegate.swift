@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import WebKit
+import Firebase
+import FirebaseCore
+import FirebaseDatabase
 import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-
+    
+    var userLoggedIn = false
+    
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
+        
+        
+        let db = Firestore.firestore()
         // Override point for customization after application launch.
         return true
     }

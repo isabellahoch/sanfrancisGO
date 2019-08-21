@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PopCultureTableViewController: UITableViewController, UISearchResultsUpdating {
+class PopCultureTableViewController: UITableViewController {
     
     var tourStops : [TourStop] = []
     
@@ -21,16 +21,16 @@ class PopCultureTableViewController: UITableViewController, UISearchResultsUpdat
         
         createTourStops()
         
-        resultSearchController = ({
-            let controller = UISearchController(searchResultsController: nil)
-            controller.searchResultsUpdater = self
-            controller.dimsBackgroundDuringPresentation = false
-            controller.searchBar.sizeToFit()
-            
-            tableView.tableHeaderView = controller.searchBar
-            
-            return controller
-        })()
+//        resultSearchController = ({
+//            let controller = UISearchController(searchResultsController: nil)
+//            controller.searchResultsUpdater = self
+//            controller.dimsBackgroundDuringPresentation = false
+//            controller.searchBar.sizeToFit()
+//
+//            tableView.tableHeaderView = controller.searchBar
+//
+//            return controller
+//        })()
         
         // Reload the table
         tableView.reloadData()
@@ -48,15 +48,15 @@ class PopCultureTableViewController: UITableViewController, UISearchResultsUpdat
         return tourStops.count
     }
     
-    func updateSearchResults(for searchController: UISearchController) {
-        filteredTableData.removeAll(keepingCapacity: false)
-        
-        let searchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchController.searchBar.text!)
-        let array = (tourStops as NSArray).filtered(using: searchPredicate)
-        filteredTableData = array as! [String]
-        
-        self.tableView.reloadData()
-    }
+//    func updateSearchResults(for searchController: UISearchController) {
+//        filteredTableData.removeAll(keepingCapacity: false)
+//        
+//        let searchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchController.searchBar.text!)
+//        let array = (tourStops as NSArray).filtered(using: searchPredicate)
+//        filteredTableData = array as! [String]
+//        
+//        self.tableView.reloadData()
+//    }
     
     func createTourStops() {
         createTourStop(name: "Emma Chamberlain ☆ The Mill SF", details: "Really good coffee and avocado toast even though it was $8. Unfortunately the marble tables were already taken. Still a good place to check out if you’re a foodie 🤤", image: UIImage(named:"the mill")!, address: "736 Divisadero St, San Francisco, CA 94117")

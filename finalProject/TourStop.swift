@@ -14,4 +14,34 @@ class TourStop {
     var address = ""
     var link : URL!
     var image = UIImage()
+    
+//    init(json: [String: Any]) {
+//        let name = json["name"]
+//        let details = json["details"]
+//        let address = json["address"]
+//        let link = json["link"]
+//        //        let image = json["image"]
+//        
+//        self.name = name as! String
+//        self.details = details as! String
+//        self.address = address as! String
+//        self.link = link as! URL
+//        //        self.image = UIImage(url:link)
+//    }
 }
+
+//extension TourStop {
+//    convenience init?(json: [String: Any]) {
+//        let name = json["name"]
+//        let details = json["details"]
+//        let address = json["address"]
+//        let link = json["link"]
+////        let image = json["image"]
+//
+//        self.name = name as! String
+//        self.details = details as! String
+//        self.address = address as! String
+//        self.link = link as! URL
+////        self.image = UIImage(url:link)
+//    }
+//}
